@@ -1,0 +1,99 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>-->
+		<!--<meta name="viewport" content="width=device-width"/>-->
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../crazy/crazy.css"/>
+		<!--<title></title>
+	</head>
+	<body>-->
+		<header>
+			<img src="../crazy/img/left.png" alt="" />
+			<a herf = "#">疯狂秒杀</a>
+			<img src="../crazy/img/shuaxin.png" alt="" />
+		</header>
+		
+		<section>
+			<div class = "banner">
+				<img src="../crazy/img/1.jpg" alt="" />
+				<p>分享</p>
+			</div>
+			<div class = "banner1">
+				<div class="banner1_1">
+					<p>10:00</p>
+					<p>已结束</p>
+					<p><img src="../crazy/img/13.png" alt="" /></p>
+					
+				</div>
+				<div class="banner1_1">
+					<p>12:00</p>
+					<p>已结束</p>
+					<p><img src="../crazy/img/13.png" alt="" /></p>
+					
+				</div>
+				<div class="banner1_1">
+					<p>15:00</p>
+					<p>已结束</p>
+					<p><img src="../crazy/img/13.png" alt="" /></p>
+					
+				</div>
+				<div class="banner1_1">
+					<p>19:00</p>
+					<p>正在抢购</p>
+					<p><img src="../crazy/img/13.png" alt="" /></p>
+					
+				</div>
+			</div>
+			
+			<div class = "content111">
+				<div class = "content1">
+					<p>距本场结束</p>
+					<p>02:01:12</p>
+				</div>
+				<a href="">查看活动细则</a>
+			</div>
+			<div class = "main111">
+				<!--<div class = "main_1">
+					<img src="img/" alt="" />
+				</div>
+				<div class = "main_2">
+					<p>苏菲超薄0.1卫生巾</p>
+					<p><span><em>￥</em>5.9</span>/原价：16.5</p>
+					<a href="#">5.9元抢购</a>
+				</div>-->
+			</div>
+			<div class = "cart"></div>
+		</section>
+		
+		<script type="text/template" id = "tpl">
+			<% for(var i in product){%>
+			<div class = "main">
+				<div class = "main_1">
+					<img src="<%= product[i].img%>" alt="" />
+				</div>
+				<div class = "main_2">
+					<p><%= product[i].name%></p>
+					<p><%= product[i].specifics%></p>
+					<p><span><em>￥</em><%= product[i].price%></span>/原价：<%= product[i].market_price%></p>
+					<a href="#">5.9元抢购</a>
+				</div>
+			</div>
+				
+			<%}%>
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--<script type="text/javascript">
+			var width = window.innerWidth;
+			var html = document.querySelector("html");
+			html.style.fontSize = width/10 + "px";
+		</script>-->
+	</body>
+</html>

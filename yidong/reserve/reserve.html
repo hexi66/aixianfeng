@@ -1,0 +1,75 @@
+
+		<link rel="stylesheet" type="text/css" href="../reserve/reserv.css"/>
+
+		<header>
+		新鲜预定
+		</header>
+		<section>
+			<div class = "top">
+				<ul>
+					<li>精选水果</li>
+					<li>直供蔬菜</li>
+					<li>水产海鲜</li>
+					<li>肉禽蛋</li>
+					<li>乳品烘焙</li>
+				</ul>
+			</div>
+			<div class = "top" id = "bottom">
+				<ul>
+					<li>熟食面点</li>
+					<li>粮食副食</li>
+					<li>酒水饮料</li>
+					<li>休闲零食</li>
+					<li>整箱购</li>
+				</ul>
+			</div>
+			<div class = "main">
+				<div class = "content">
+						<p>精选水果</p>
+				</div>
+				<div class = "content2"></div>
+				<!--<div class = "content1">
+						<figure>
+							<img src="img/8.jpg" alt="" />
+							<figcaption>
+								<p>[次日达]越南进口百香果240g</p>
+								<a href="">￥28</a>
+							</figcaption>
+						</figure>
+						
+						<div class = "cart"></div>
+				</div>-->
+			</div>
+			
+			
+		</section>
+			
+		<script type="text/template" id = "tpl">
+			
+			<% for(var i in product){%>
+				
+				
+				<div class = "content1" string =<%= product%>>
+						<figure>
+							<img src="<%= product[i].img%>" alt="" />
+							<figcaption>
+								<p><%= product[i].name%><span></p>
+									<p><%= product[i].specifics%></p>
+								<span>￥<%= product[i].price%><a>￥<%= product[i].market_price%></a></span>
+							</figcaption>
+						</figure>
+						<div class = "bottom">
+							<div class = "munis"></div>
+							<span id="">0</span>
+							<div class = "add"></div>
+						</div>
+						
+				</div>
+				
+				
+				
+				
+				
+			<% } %>
+		</script>
+		

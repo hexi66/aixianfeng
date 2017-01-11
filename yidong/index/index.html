@@ -1,0 +1,131 @@
+
+		<div id = "content">
+			<header>
+			<div>
+				<a href="#">
+					<img src="img/扫一扫.png" alt="" />
+					<span>扫一扫</span>
+				</a>
+				<h3>创业路附近</h3>
+				<a href="#search">
+					<img src="img/10.png" alt="" />
+					<span>搜索</span>
+				</a>
+			</div>
+		</header>
+		<section>
+			<div class = "swiper-container">
+				<div class = "swiper-wrapper" id = "banner1"></div>
+				<!--<img src="img/1.jpg"/>-->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--<div class = "photo">-->
+				<div class = "div1">
+						
+				</div>
+				
+			<!--</div>-->
+			<div class = "content">
+				<p><span>鲜锋头条</span></p>
+				<p>
+					<span>防霾</span>
+					<a href="#">3M防霾口罩22.8元/3只 1个小时闪送</a>
+				</p>
+			</div>
+			<div class = "imgone">
+				<img src="img/1_02.png" alt="" />
+			</div>
+			<div class = "imgtwo">
+				<img src="img/1_04.png"/>
+			</div>
+			
+			
+			
+			
+			<div id = "box">
+				<div class = "top">
+					<span>优选水果</span>
+					<span>更多  &gt;</span>
+				</div>
+				<div class = "banner">
+					<img src="img/7.jpg" alt="" />
+				</div>
+				<div class = "bottom">
+				
+				</div>
+			</div>
+		</section>
+		</div>
+		
+		
+		<footer>
+			<ul>
+				<li id = "aa">
+					<a href="#index">
+						<img src="img/12.png" alt="" />
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="#market">
+						<img src="img/13.png" alt="" />
+						<span>闪送超市</span>
+					</a>
+				</li>
+				<li>
+					<a href="#reserve">
+						<img src="img/1_03.png" alt="" />
+						<span>新鲜预定</span>
+					</a>
+				</li>
+				<li>
+					<a href="#mycart">
+						<img src="img/15.png" alt="" />
+						<span>购物车</span>
+						<span class = "cartpro">0</span>
+					</a>
+				</li>
+				<li>
+					<a href="#my">
+						<img src="img/17.png" alt="" />
+						<span>我的</span>
+					</a>
+				</li>
+				
+			</ul>
+		</footer>
+		<script type="text/template" id="tpla">
+			<% for(var i in data.slide){ %>
+			<div class="swiper-slide"><img src="<%=data.slide[i].activity.img%>"/></div>
+			<% } %>
+		</script>
+		
+		<script type="text/template" id="tpll">
+			<% for(var i in data.menu){ %>
+			<a href="javascript:;"><figure class = "crazy"><img src="<%=data.menu[i].activity.img%>"/>
+					<figcaption><%=data.menu[i].activity.name%></figcaption>
+			</figure></a>
+			<% } %>
+		</script>
+		
+		<script type="text/template" id = "tplll">
+			<%var result1 = data;%>
+
+			<% for(var i in result1){ %>
+					
+					<div class = "left">
+						<img src="<%= result1[i].img %>" alt="" />
+						<p><%= result1[i].name %></p>
+						<p>
+							<span>精选</span>
+							<span>买一赠一</span>
+						</p>
+						<p><span><%= result1[i].specifics %></span>/盒</p>
+						<p><span>￥<%= result1[i].price %></span><a href="#">￥<%= result1[i].market_price %></a></p>
+						<div class = "shopping"></div>
+					</div>
+			<% } %>
+
+					
+		</script>
+

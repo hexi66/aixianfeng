@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+html,body,ul,li,p{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		background: #efefef;
+		font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, "Microsoft Yahei", Simsun;
+		font-size: 0.25rem;
+		background: #efefef;
+	}
+	ul,li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: #8c8c8b;
+	}
+	
+
+
+
+	header{
+		background: #f9fafd;
+		height: 1.4062rem;
+		line-height:1.4062rem ;
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+		border-bottom: 1px solid #e0e0e0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		
+	}
+	header>img:first-child{
+		width:0.375rem;
+		height:0.6562rem;
+		margin-top: 0.4218rem;
+	}
+	header>img:last-child{
+		width:0.4375rem;
+		height:0.4062rem;
+		position: absolute;
+		left: 1.8231rem;
+		
+		top: 0.5156rem;
+	}
+	header>input{
+		width:5.3906rem;
+		height:0.7812rem;
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		color: #c3c3c4;
+		margin-top: 0.2656rem;
+		background: #f9fafd;
+		padding-left: 0.7812rem;
+	}
+	header>a{
+		font-size:0.4375rem ;
+		color: #777;
+	}
+	
+	section{
+	padding: 0.9375rem 0 1.125rem 0.3125rem;
+	position: absolute;
+		left: 0;
+		right: 0;
+		top:1.4062rem;
+		bottom: 1.5625rem;
+		overflow: auto;
+}
+.main{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-right: 0.3125rem;
+}
+	.sea-content{
+		width:4.375rem;
+		height: 7.0312rem;
+		background: #fff;
+		padding-left: 0.1562rem;
+		position: relative;
+		margin-bottom: 0.3125rem;
+	}
+	.sea-content p:first-of-type{
+		font-size: 0.375rem;
+		color: #000;
+		line-height: 0.5937rem;
+		margin-bottom: 0.2656rem;
+	}
+	.sea-content p:nth-of-type(2){
+		color: #999;
+		font-size: 0.375rem;
+		margin-top: 0.2656rem;
+		margin-bottom: 0.2656rem;
+	}
+	.sea-content p:nth-of-type(3) {
+		color: red;
+	}
+	.sea-content p:nth-of-type(3) a{
+		text-decoration: line-through;
+	}
+	.sea-content>div{
+		    width: 0.8593rem;
+		    height: 0.8593rem;
+		    background: url(img/9.png) no-repeat -2.7037rem center red;
+		    border-radius: 50%;
+		    border: 1px solid #999;
+		    position: absolute;
+		    right: 0.575rem;
+		    bottom:0.3906rem;
+		    background-size: 4.2rem 1.5062rem;
+	}
+	.sea-content>img{
+		width:3.125rem;
+		height: 3.125rem;
+		margin-left: 0.5937rem;
+		margin-bottom: 0.3437rem;
+		margin-top: 0.3437rem;
+	}
+	.sea-content>a{
+		color: red;
+		border: 1px solid red;
+		padding: 1px 0.125rem;
+		border-radius: 0.1562rem;
+	}
